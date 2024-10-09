@@ -1,0 +1,335 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #1e1e2f;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* Header */
+#main-header {
+  background: linear-gradient(135deg, #1e1e2f, #1e1e2f); /* Light pink to darker pink gradient */
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.bot-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.bot-name {
+  font-size: 1.8em;
+  color: #ffcccb; /* Soft pink */
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  background-color: #150c10; /* Hot pink */
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #b12e76; /* Darker pink */
+  transform: scale(1.05);
+}
+
+/* Hero Section */
+#hero {
+  background: url('banner2.png')  no-repeat center center/cover; /* Background image */
+  background-size: cover;
+  padding: 100px 20px;
+  text-align: center;
+  overflow: hidden;
+  height: 600px;
+}
+
+#hero .content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#hero h1 {
+  font-size: 3em;
+  color: #f0adff; /* Hot pink */
+  font-weight: bolder;
+  font-family: 'Gill Sans', 'Gill Sans MT';
+  text-shadow: 10px 10px 10px rgba(9, 6, 6, 0.5); /* add a subtle shadow */ 
+  opacity: 5.0;
+  -webkit-text-stroke: 1.5px #fef9f9;
+ 
+}
+
+#hero p {
+  font-size: 1.5em;
+  margin: 20px 0;
+  font-weight: bolder;
+  text-shadow: 10px 10px 10px rgba(9, 6, 6, 0.5); /* add a subtle shadow */ 
+  opacity: 5.0;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* styles.css */
+
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Body background for dark mode */
+
+.container {
+  text-align: center;
+  background-color: #16213e; /* Slightly lighter dark shade */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Title styles */
+h1 {
+  color: #b8a9c9; /* Light purple for title */
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* Stats container styles */
+.stats p {
+  font-size: 1.5rem;
+  color: #e0e0e0; /* Light grey for stats */
+  margin: 15px 0;
+}
+
+/* Highlighting the dynamic numbers */
+#server-count, #user-count {
+  color: #9b5de5; /* Purple for counts */
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+/* Adding transition for smooth hover effect */
+.container:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Additional responsive design for mobile */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .stats p {
+    font-size: 1.2rem;
+  }
+
+  #server-count, #user-count {
+    font-size: 1.8rem;
+  }
+}
+
+
+
+/* Features Section */
+#features {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #1e1e2f; /* Light background for contrast */
+}
+
+#features h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #ff69b4; /* Hot pink */
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+  grid-gap: 20px; /* Space between items */
+}
+
+.feature-item {
+  background-color: #050101; /* Light pink background */
+  padding: 20px;
+  border-radius: 20px; /* Curved edges */
+  text-align: center;
+  border: 3px solid #efeaeb; /* Metallic-like border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: transform 0.3s, box-shadow 0.3s; /* Transition for hover effect */
+}
+
+.feature-item:hover {
+  transform: scale(1.05); /* Slight scale effect on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.feature-item img {
+  width: 300px; /* Fixed width for icons */
+  height: 300px; /* Fixed height for icons */
+  margin-bottom: 10px;
+  border-radius: 15px; /* Curved edges for images */
+}
+
+.feature-item h3 {
+  font-size: 1.4em;
+  margin: 15px 0 10px; /* Adjusted margin */
+  color: #db7093; /* Darker pink */
+}
+
+.feature-item p {
+  font-size: 1em;
+  color: #fdfbfb; /* Dark text for contrast */
+}
+
+/* Testimonials Section */
+#testimonials {
+  text-align: center;
+  background: url('Untitled.jpeg')  no-repeat center center/cover; /* Background image */
+  background-size: cover;
+  padding: 100px 20px;
+  overflow: hidden;
+}
+
+#testimonials h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #f0adff;
+  text-shadow: 10px 10px 10px rgba(9, 6, 6, 0.5); /* add a subtle shadow */ 
+  opacity: 5.0;
+  -webkit-text-stroke: 1.5px #fef9f9;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.testimonials blockquote {
+  background-color: #ffb6c1;
+  padding: 20px;
+  border-radius: 10px;
+  font-style: italic;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-item h3 {
+  font-size: 2.2em;
+  color: #db7093;
+}
+
+
+/* FAQ Section */
+#faq {
+  padding: 50px 50px;
+  text-align: center;
+  background-color: #1e1e2f; /* Dark background for contrast */
+}
+
+#faq h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #ff69b4; /* Pink heading */
+}
+
+.faq-item {
+  background-color: #db7093; /* Pink shade for FAQ items */
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+/* Hover effect for faq-item */
+.faq-item:hover {
+  transform: scale(1.05); /* Slight scale effect on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.faq-item h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #030001; /* Dark text color */
+}
+
+.faq-item p {
+  font-size: 1.1em;
+  color: #fdfdfd; /* Light text color for readability */
+}
+
+/* Footer */
+footer {
+  padding: 30px 20px;
+  background-color: #1e1e2f;
+  text-align: center;
+}
+
+.footer-links,
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-links a,
+.footer-social a {
+  color: #ff69b4;
+  text-decoration: none;
+}
+
+.footer-social a:hover,
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  color: #ff69b4;
+}

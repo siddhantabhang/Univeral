@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discord Bot Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header id="main-header">
+    <div class="logo-container">
+      <img src="logo-universal.jpg" alt="Bot Icon" class="bot-icon">
+      <h1 class="bot-name">Universal Bot</h1>
+    </div>
+    <nav>
+      <a href="https://discord.com/oauth2/authorize?client_id=1102842571018993666&permissions=8&integration_type=0&scope=bot" target="_blank" class="btn" id="invite-btn">Invite</a>
+      <a href="https://discord.gg/sageverse" target="_blank" class="btn" id="community-btn">Join Our Community</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-overlay"></div> <!-- Overlay for the fading effect -->
+    <div class="hero-content">
+      <h1>Automate Your Discord with <span id="bot-name">Universal Bot !!</span></h1>
+      <p>Seamless Moderation, Fun Games, and More at Your Fingertips.</p>
+      <div class="cta-buttons">
+        <a href="https://discord.com/oauth2/authorize?client_id=1102842571018993666&permissions=8&integration_type=0&scope=bot"  target="_blank" class="btn" id="hero-invite-btn">Invite Universal</a>
+        <a href="https://discord.gg/sageverse" target="_blank" class="btn" id="hero-community-btn">Join Our Community</a>
+      </div>
+    </div>
+  </section>
+
+  <!--Stats section-->
+  <div class="container">
+    <h1>Discord Bot Live Stats</h1>
+    <div class="stats">
+      <p>Live Server Count: <span id="server-count">0</span></p>
+      <p>Live User Count: <span id="user-count">0</span></p>
+    </div>
+  </div>
+
+  <script>
+    function updateStats() {
+      fetch('/bot-stats')
+        .then(response => response.json())
+        .then(data => {
+          document.getElementById('server-count').textContent = data.servers;
+          document.getElementById('user-count').textContent = data.users;
+        });
+    }
+
+    // Update stats every 10 seconds
+    setInterval(updateStats, 10000);
+    updateStats();
+  </script>
+</body>
+</html>
+
+
+  <!-- Features Section -->
+<!-- Features Section -->
+<section id="features">
+    <h2>Why Choose Universal?</h2>
+    <div class="feature-grid">
+      <div class="feature-item">
+        <img src="logo-universal.jpg" alt="Moderation Tools">
+        <h3>Moderation Tools</h3>
+        <p>Keep your server safe and secure.</p>
+      </div>
+      <div class="feature-item">
+        <img src="logo-universal.jpg" alt="Custom Commands">
+        <h3>Custom Commands</h3>
+        <p>Tailor the bot to your community’s needs.</p>
+      </div>
+      <div class="feature-item">
+        <img src="logo-universal.jpg" alt="Music Player">
+        <h3>Music Player</h3>
+        <p>Stream your favorite music with ease.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials">
+    <h2>Trusted by Thousands of Servers</h2>
+    <div class="testimonials-slider">
+      <blockquote>"This bot is a game-changer for server management!"</blockquote>
+      <blockquote>"Amazing features and flawless execution!"</blockquote>
+      <blockquote>"Our community loves the mini-games feature!"</blockquote>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3>How do I invite the bot to my server?</h3>
+      <p>Simply click the Invite button at the top and follow the instructions.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What permissions does the bot need?</h3>
+      <p>The bot requires admin permissions to function properly.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How do I customize commands?</h3>
+      <p>Custom commands can be configured in the settings panel of your server.</p>
+    </div>
+  </section>
+  
+
+  <!-- Footer Section -->
+  <footer id="main-footer">
+    <div class="footer-links">
+      <a href="home.html">Home</a>
+      <a href="https://discord.com/oauth2/authorize?client_id=1102842571018993666&permissions=8&integration_type=0&scope=bot" target="_blank">Invite</a>
+      <a href="https://discord.gg/sageverse" target="_blank">Community</a>
+    </div>
+    <p>&copy; 2024 Universal . All rights reserved. </p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="discord.js"></script>
+  <script src="Express.js"></script>
+</body>
+</html>
