@@ -1,52 +1,52 @@
 document.addEventListener('DOMContentLoaded', function() {
     const inviteBtns = document.querySelectorAll('#invite-btn, #hero-invite-btn');
     const communityBtns = document.querySelectorAll('#community-btn, #hero-community-btn');
-
-    // Function to add hover effects for buttons
+  
+    // Function to animate buttons on hover
     function buttonHoverEffect(buttons) {
-        buttons.forEach(button => {
-            button.addEventListener('mouseenter', () => {
-                button.style.backgroundColor = '#DC44A4FF'; // Change color on hover
-            });
-
-            button.addEventListener('mouseleave', () => {
-                button.style.backgroundColor = '#090809FF'; // Revert color after hover
-            });
+      buttons.forEach(button => {
+        button.addEventListener('mouseenter', () => {
+          button.style.backgroundColor = '#DC44A4FF'; // Color change on hover
         });
+  
+        button.addEventListener('mouseleave', () => {
+          button.style.backgroundColor = '#090809FF'; // Revert color on leave
+        });
+      });
     }
-
-    // Apply hover effects to invite and community buttons
+  
     buttonHoverEffect(inviteBtns);
     buttonHoverEffect(communityBtns);
-
-    // Carousel functionality for the showcase section
-    const carousel = document.querySelector('.showcase-carousel');
-    let isMouseDown = false;
+  
+    // Carousel functionality for testimonials or any carousel sections
+    const carousel = document.querySelector('.testimonials-slider');
+    let isDown = false;
     let startX;
-    let initialScrollLeft;
-
+    let scrollLeft;
+  
     carousel.addEventListener('mousedown', (e) => {
-        isMouseDown = true;
-        carousel.classList.add('active');
-        startX = e.pageX - carousel.offsetLeft;
-        initialScrollLeft = carousel.scrollLeft;
+      isDown = true;
+      carousel.classList.add('active');
+      startX = e.pageX - carousel.offsetLeft;
+      scrollLeft = carousel.scrollLeft;
     });
-
+  
     carousel.addEventListener('mouseleave', () => {
-        isMouseDown = false;
-        carousel.classList.remove('active');
+      isDown = false;
+      carousel.classList.remove('active');
     });
-
+  
     carousel.addEventListener('mouseup', () => {
-        isMouseDown = false;
-        carousel.classList.remove('active');
+      isDown = false;
+      carousel.classList.remove('active');
     });
-
+  
     carousel.addEventListener('mousemove', (e) => {
-        if (!isMouseDown) return;
-        e.preventDefault();
-        const x = e.pageX - carousel.offsetLeft;
-        const distanceMoved = (x - startX) * 2; // Adjust scroll speed
-        carousel.scrollLeft = initialScrollLeft - distanceMoved;
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - carousel.offsetLeft;
+      const walk = (x - startX) * 2; // Fast scroll
+      carousel.scrollLeft = scrollLeft - walk;
     });
-});
+  });
+
