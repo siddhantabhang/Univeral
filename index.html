@@ -3,7 +3,7 @@
 <head>
   <!-- Meta Information -->
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
   <meta name="description" content="Universal Bot - Automate your Discord with powerful temporary voice channels and text-to-speech features. Join thousands of servers!">
   <meta name="keywords" content="Discord bot, temporary voice channels, text-to-speech, voice master bot, automate Discord server">
   <meta name="robots" content="index, follow">
@@ -22,12 +22,12 @@
   <!-- Header Section -->
   <header id="main-header">
     <div class="logo-container">
-      <img src="logo-universal.jpg" alt="Bot Icon" class="bot-icon">
+      <img src="logo-universal.jpg" alt="Bot Icon" class="bot-icon" srcset="logo-universal-small.jpg 300w, logo-universal.jpg 800w" sizes="(max-width: 600px) 300px, 800px">
       <h1 class="bot-name">Universal Bot</h1>
     </div>
     <nav>
-      <a href="https://discord.com/oauth2/authorize?client_id=1102842571018993666&permissions=8&integration_type=0&scope=bot" target="_blank" class="btn" id="invite-btn">Invite</a>
-      <a href="https://discord.gg/sageverse" target="_blank" class="btn" id="community-btn">Join Our Community</a>
+      <a href="https://discord.com/oauth2/authorize?client_id=1102842571018993666&permissions=8&integration_type=0&scope=bot" target="_blank" class="btn" id="invite-btn" aria-label="Invite Universal Bot">Invite</a>
+      <a href="https://discord.gg/sageverse" target="_blank" class="btn" id="community-btn" aria-label="Join Universal Bot Community">Join Our Community</a>
     </nav>
   </header>
 
@@ -128,8 +128,8 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="script.js"></script>
-  <script src="discord.js"></script>
-  <script src="Express.js"></script>
+  <script src="script.js" defer></script>
+  <script src="discord.js" defer></script>
+  <script src="Express.js" defer></script>
 </body>
 </html>
