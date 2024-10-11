@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /private/        # Block access to a hypothetical private directory
+Disallow: /temp/           # Block access to temporary content or folders
+
+Allow: /
+
+# Specify the location of the sitemap for efficient indexing
+Sitemap: https://universal-bot.space/sitemap.xml
