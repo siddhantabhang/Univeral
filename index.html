@@ -4,41 +4,78 @@
   <!-- Meta Information -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-  <meta name="description" content="Universal Bot - Automate your Discord with powerful temporary voice channels and text-to-speech features. Join thousands of servers!">
-  <meta name="keywords" content="Discord bot, temporary voice channels, text-to-speech, voice master bot, automate Discord server">
+  <meta name="description" content="Universal Bot - Automate your Discord with powerful temporary voice channels and text-to-speech features. Join thousands of servers today!">
+  <meta name="keywords" content="Discord bot, temporary voice channels, text-to-speech, voice master bot, Discord automation, server management">
   <meta name="robots" content="index, follow">
   <meta name="author" content="Universal Bot">
+  <meta name="theme-color" content="#2f3136"> <!-- Improves mobile visibility -->
+
+  <!-- Open Graph Metadata for SEO and Social Media -->
+  <meta property="og:title" content="Universal Bot | Automate Discord with VoiceMaster and TTS">
+  <meta property="og:description" content="Automate your Discord with advanced temporary voice channels and text-to-speech features. Join thousands of servers with Universal Bot!">
+  <meta property="og:image" content="https://universal-bot.space/logo-universal.jpg">
+  <meta property="og:image:type" content="image/jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://universal-bot.space">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Universal Bot | Automate Discord with VoiceMaster and TTS">
+  <meta name="twitter:description" content="Automate your Discord with advanced temporary voice channels and text-to-speech features. Join thousands of servers with Universal Bot!">
+  <meta name="twitter:image" content="https://universal-bot.space/logo-universal.jpg">
+
+  <!-- Structured Data for Rich Snippets (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Universal Bot",
+    "url": "https://universal-bot.space",
+    "description": "Automate your Discord with powerful temporary voice channels and text-to-speech features.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Universal Bot",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://universal-bot.space/logo-universal.jpg"
+      }
+    }
+  }
+  </script>
 
   <!-- Title for SEO -->
   <title>Universal Bot | Automate Discord with VoiceMaster and TTS</title>
 
   <!-- Favicon -->
-  <link rel="icon" href="logo-universal.jpg" type="image/jpg">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.min.css"> <!-- Use minified CSS for faster loading -->
 </head>
 <body>
   <!-- Header Section -->
-  <header id="main-header">
+  <header id="main-header" role="banner">
     <div class="logo-container">
-      <img src="logo-universal.jpg" alt="Bot Icon" class="bot-icon" srcset="logo-universal-small.jpg 300w, logo-universal.jpg 800w" sizes="(max-width: 600px) 300px, 800px">
+      <img src="logo-universal.jpg" alt="Bot Icon" class="bot-icon" loading="lazy" srcset="logo-universal-small.jpg 300w, logo-universal.jpg 800w" sizes="(max-width: 600px) 300px, 800px">
       <h1 class="bot-name">Universal Bot</h1>
     </div>
-    <nav>
+    <nav role="navigation">
       <a href="https://discord.com/oauth2/authorize?client_id=1102842571018993666&permissions=8&integration_type=0&scope=bot" target="_blank" class="btn" id="invite-btn" aria-label="Invite Universal Bot">Invite</a>
       <a href="https://discord.gg/sageverse" target="_blank" class="btn" id="community-btn" aria-label="Join Universal Bot Community">Join Our Community</a>
     </nav>
   </header>
 
   <!-- Hero Section -->
-  <section id="hero">
-    <div class="hero-overlay"></div> <!-- Overlay for the fading effect -->
+  <section id="hero" aria-labelledby="hero-heading">
+    <div class="hero-overlay"></div>
     <div class="hero-content">
-      <h1>Automate Your Discord with <span id="bot-name">Universal Bot !!</span></h1>
+      <h1 id="hero-heading">Automate Your Discord with <span id="bot-name">Universal Bot !!</span></h1>
       <p>Master Temporary Voice Channels & Unleash Powerful Text-to-Speech Features With Universal!</p>
       <div class="cta-buttons">
-        <a href="https://discord.com/oauth2/authorize?client_id=1102842571018993666&permissions=8&integration_type=0&scope=bot"  target="_blank" class="btn" id="hero-invite-btn">Invite Universal</a>
+        <a href="https://discord.com/oauth2/authorize?client_id=1102842571018993666&permissions=8&integration_type=0&scope=bot" target="_blank" class="btn" id="hero-invite-btn">Invite Universal</a>
         <a href="https://discord.gg/sageverse" target="_blank" class="btn" id="hero-community-btn">Join Our Community</a>
       </div>
     </div>
@@ -48,8 +85,8 @@
   <div class="container">
     <h1>Discord Bot Live Stats</h1>
     <div class="stats">
-      <p>Live Server Count: <span id="server-count">902+</span></p>
-      <p>Live User Count: <span id="user-count">766670+</span></p>
+      <p>Live Server Count: <span id="server-count">921+</span></p>
+      <p>Live User Count: <span id="user-count">844938+</span></p>
     </div>
   </div>
 
@@ -69,30 +106,30 @@
   </script>
 
   <!-- Features Section -->
-  <section id="features">
-    <h2>Why Choose Universal?</h2>
+  <section id="features" aria-labelledby="features-heading">
+    <h2 id="features-heading">Why Choose Universal?</h2>
     <div class="feature-grid">
       <div class="feature-item">
-        <img src="Voicemaster.png" alt="Voice Master / Temporary Voice">
+        <img src="Voicemaster.png" alt="Voice Master / Temporary Voice" loading="lazy">
         <h3>Voice Master Control Panel</h3>
-        <p>This interface allows you to manage your Voice Master temporary voice channels effortlessly.</p>
+        <p>Manage your Voice Master temporary voice channels effortlessly.</p>
       </div>
       <div class="feature-item">
-        <img src="setup.png" alt="Custom Commands">
+        <img src="setup.png" alt="Custom Commands" loading="lazy">
         <h3>Master Temporary Voice Channels With VoiceMaster</h3>
-        <p>Initiate Setup: Use the .setup command in your desired channel.</p>
+        <p>Use the .setup command to get started.</p>
       </div>
       <div class="feature-item">
-        <img src="logo-universal.jpg" alt="Music Player">
+        <img src="logo-universal.jpg" alt="Advanced Text-to-Speech" loading="lazy">
         <h3>Advanced Text-to-Speech (TTS) Features</h3>
-        <p>Speak your message directly in your voice channel with different-different Accents.</p>
+        <p>Speak your message directly in your voice channel with multiple accents.</p>
       </div>
     </div>
   </section>
 
   <!-- Testimonials Section -->
-  <section id="testimonials">
-    <h2>Trusted by Thousands of Servers</h2>
+  <section id="testimonials" aria-labelledby="testimonials-heading">
+    <h2 id="testimonials-heading">Trusted by Thousands of Servers</h2>
     <div class="testimonials-slider">
       <blockquote>"This bot is a game-changer for server management!"</blockquote>
       <blockquote>"Amazing features and flawless execution!"</blockquote>
@@ -101,24 +138,24 @@
   </section>
 
   <!-- FAQ Section -->
-  <section id="faq">
-    <h2>Frequently Asked Questions</h2>
+  <section id="faq" aria-labelledby="faq-heading">
+    <h2 id="faq-heading">Frequently Asked Questions</h2>
     <div class="faq-item">
       <h3>How do I invite the bot to my server?</h3>
-      <p>Simply click the Invite button at the top and follow the instructions.</p>
+      <p>Click the Invite button at the top and follow the instructions.</p>
     </div>
     <div class="faq-item">
       <h3>What permissions does the bot need?</h3>
-      <p>The bot requires administrator permissions to work properly and access all functions.</p>
+      <p>The bot requires administrator permissions for full functionality.</p>
     </div>
     <div class="faq-item">
-      <h3>How do I Setup VoiceMaster / Temporary Voice function in my server and customize it?</h3>
-      <p>Run the cmd ".setup", "/setup" then click on Setup VoiceMaster Button to setup Tempvoice and customize it with the buttons given.</p>
+      <h3>How do I setup the VoiceMaster function in my server?</h3>
+      <p>Run the command ".setup", "/setup" then click Setup VoiceMaster.</p>
     </div>
   </section>
 
   <!-- Footer Section -->
-  <footer id="main-footer">
+  <footer id="main-footer" role="contentinfo">
     <div class="footer-links">
       <a href="index.html">Home</a>
       <a href="https://discord.com/oauth2/authorize?client_id=1102842571018993666&permissions=8&integration_type=0&scope=bot" target="_blank">Invite</a>
@@ -127,9 +164,7 @@
     <p>&copy; 2024 Universal. All rights reserved.</p>
   </footer>
 
-  <!-- Scripts -->
-  <script src="script.js" defer></script>
-  <script src="discord.js" defer></script>
-  <script src="Express.js" defer></script>
+  <!-- Minified Scripts -->
+  <script src="script.min.js" defer></script>
 </body>
 </html>
