@@ -39,24 +39,36 @@ body {
   color: #ffcccb;
 }
 
+/* Nav Bar Styles */
 nav {
   display: flex;
   gap: 20px;
 }
 
-.btn {
-  background-color: #150c10;
-  color: white;
-  padding: 12px 25px;
-  text-decoration: none;
-  border-radius: 50px;
-  font-size: 1.1em;
-  font-weight: bold;
-  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+.navbar {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
 }
 
-.btn:hover {
-  background-color: #b12e76;
+.navbar li {
+  display: inline;
+}
+
+.navbar a {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #007bff; /* Primary color */
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #0056b3; /* Hover color */
   transform: scale(1.05);
 }
 
